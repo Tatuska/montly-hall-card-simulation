@@ -1,0 +1,131 @@
+
+/* Game */
+.game-container{
+    margin-top: 200px;
+}
+
+.game-congrates{
+    color: rgba(235,18,80,1);
+}
+
+.game-text{
+margin-top: 50px;}
+
+.game-container>h1{
+    margin-bottom: 60px;
+}
+.game-container>h2{
+    margin-top: 60px;
+}
+
+/* Card */
+.door-container{
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+  margin: auto;
+}
+.door-img{
+    height: 200px !important;
+    width: auto;
+}
+
+.card-img{
+    width:252px;
+    height:352px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 252px;
+    height: 352px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+    z-index: 2;
+  }
+  
+  .flip-card-back {
+    color: white;
+    transform: rotateY(180deg);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* button */
+  .button{
+    color: #1C2E5D !important;
+    border-color:  #1C2E5D !important;
+  }
+
+  .button:hover{
+    background-color: #1C2E5D !important;
+    border-color:  #1C2E5D !important;
+    color: white !important;
+  }
+
+
+  /* statistic component */
+  .statistic-container{
+    max-width: 350px;
+    font-size: 30px;
+    background-color: rgba(255,255,255,.85);
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.1);
+    box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,.1);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: .25rem;
+    text-align: left;
+    margin-left: 5%;
+  }
+  
+
+  .statistic-header{
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: .25rem .75rem;
+    color: #6c757d;
+    background-color: rgba(255,255,255,.85);
+    background-clip: padding-box;
+    border-bottom: 1px solid rgba(0,0,0,.05); 
+  }
+
+  .statistic-body {
+    padding: .75rem;
+    font-size: 20px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .door-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .flip-card {
+      margin-bottom: 20px;
+    }
+  }
